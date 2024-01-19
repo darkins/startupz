@@ -69,6 +69,7 @@ a {
   color:  var(--primary-color);
   text-decoration: inherit;
   font-family: Circular Std Medium;
+  transition: color 300ms ease-in-out;
 }
 
 a:hover {
@@ -198,6 +199,10 @@ footer a {
   line-height: 35px;
 }
 
+footer a:hover {
+  color: black;
+}
+
 
 /* Sections */
 section {
@@ -230,7 +235,7 @@ section.hero h1 {
 section.hero .hero-art {
   position: absolute;
   bottom: -7px;
-  right: -120px;
+  right: -20px;
 }
 
 /* Who we are Section */
@@ -244,6 +249,7 @@ section.solving-problems .container {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 section.solving-problems h1 {
@@ -262,6 +268,11 @@ section.solving-problems img.right {
   transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
   margin-left: 1rem;
+}
+
+section.solving-problems .chat {
+  position: absolute;
+  right: 0;
 }
 
 /* Our works Section */
