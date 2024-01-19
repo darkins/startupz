@@ -145,14 +145,11 @@ p {
 header {
   padding: 2rem 0;
 }
-
-header .container {  
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 /* Nav */
+
+nav.mobile {
+  display: none;
+}
 
 nav ul {
   list-style-type: none;
@@ -490,6 +487,10 @@ form input:focus, form textarea:focus {
   -webkit-transform: scaleX(-1);
 }
 
+.off {
+  display: none;
+}
+
 /* Media Queries for Mobile */
 @media  screen and (max-width: 820px) {
   body {
@@ -555,9 +556,11 @@ form input:focus, form textarea:focus {
     width: 100%;
     margin-bottom: 1rem;
   }
-  nav {
-    display: none;
-  }
+
+  /* Nav menubar */
+ 
+/* Nav Menu */
+
   h1, h2, h5 {
     font-size: 1.8rem;
     line-height: 1.3;

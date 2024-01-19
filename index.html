@@ -8,19 +8,22 @@
   <meta name="description" content="This is the assignment task for Startupz creatd by Declan Arkins">
   <title>Startupz - Landing Page</title>
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/menu.css">
 </head>
 
 <body>
   <header id="top">
-    <div class="container">
+    <div class="top-nav container">
       <div class="logo"><img src="images/startupz-logo.svg" alt="Startupz Logo" /></div>
-      <nav>
-        <ul>
-          <li><a href="#who-we-are">Startupz</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#work-with-us" class="btn-secondary">Work with us!</a></li>
-        </ul>
-      </nav>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li><a href="#who-we-are">Startupz</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#work-with-us" class="btn-secondary">Work with us!</a></li>
+      </ul>
     </div>
   </header>
   <section class="hero">
