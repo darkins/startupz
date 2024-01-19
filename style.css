@@ -70,6 +70,7 @@ a {
   text-decoration: inherit;
   font-family: Circular Std Medium;
   transition: color 300ms ease-in-out;
+  padding: 1rem;
 }
 
 a:hover {
@@ -146,8 +147,8 @@ header .container {
 }
 
 /* Nav */
-nav a {
-  margin: 0 0.5rem;
+nav a:last-child {
+  margin-left: 0.5rem;
 }
 
 /* Footer */
@@ -197,6 +198,7 @@ footer a {
   font-size: 18px;
   color: var(--secondary-color);
   line-height: 35px;
+  margin-left: -1rem; /* allowing appropriate padding for mobile links accessibility */
 }
 
 footer a:hover {
