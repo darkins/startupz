@@ -319,7 +319,7 @@ section.we-are-hiring .content {
 
 /* Contact section */
 section.contact {
-  background: #FFC351 url(/rocket-ship.svg) 80% 100% no-repeat;
+  background: #FFC351 url(images/rocket-ship.svg) 80% 100% no-repeat;
 }
 
 section.contact .container {
