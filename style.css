@@ -77,6 +77,12 @@ a:hover {
   color: var(--secondary-color);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
 .container {
   position: relative;
   max-width: 1440px;
@@ -147,6 +153,12 @@ header .container {
 }
 
 /* Nav */
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
 nav a:last-child {
   margin-left: 0.5rem;
 }
@@ -223,7 +235,7 @@ section:nth-child(odd) {
 section.hero .container {
   position: relative;
   padding: 6rem 4rem 0 ;
-  height: 600px;
+  min-height: 600px;
 }
 
 section.hero h1 {  
@@ -238,6 +250,7 @@ section.hero .hero-art {
   position: absolute;
   bottom: -7px;
   right: -20px;
+  z-index: -1;
 }
 
 /* Who we are Section */
@@ -475,4 +488,118 @@ form input:focus, form textarea:focus {
 .thumbs-component img.right {
   transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
+}
+
+/* Media Queries for Mobile */
+@media  screen and (max-width: 800px) {
+  header {
+    padding: 1rem 0;
+  }
+  .logo img, .foot-logo img, .socials img {
+    display: block;
+    width: 140px;
+  }
+  .foot-logo img {
+    width: 100px;
+  }
+  .socials img {
+    width: auto;
+  }
+  .socials ul {
+    display: flex;
+  }
+  .socials a {
+    line-height: 1.3;
+    margin-right: 1rem;
+  }
+  header .container {
+    display: flex;
+  }
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  section.who .flex {
+    display: block;
+  }
+
+  .flex {
+    display: block;
+    gap: 0;
+  }
+
+  section .container {
+    padding: 3rem 1rem;
+    height: 80vh;
+  }
+  section.hero .container {
+    padding: 4rem 2rem;
+  }
+  section.hero h1 {
+    width: auto;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  section.hero p {
+    width: auto;
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+  .card {
+    width: 100%;
+  }
+  nav {
+    display: none;
+  }
+  h1, h2, h5 {
+    font-size: 1.8rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+  p {
+    font-size: 18px;
+  }
+  section.contact {
+    padding: 0 1rem;
+  }
+  section.contact h1 {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  section.solving-problems h1, .thumbs-component h1 {
+    font-size: 1.3rem;
+    line-height: 1.3;
+  }
+
+  .thumbs-component img, .we-are-hiring img {
+    display: none;
+  }
+
+  section.contact p {
+    font-size: 1rem;
+  }
+  footer .container {
+    padding: 2rem 1rem;
+  }
+  .foot-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .copy {
+    padding-top: 0;
+    font-size: 12px;
+    line-height: 1;
+    width: 60%;
+  }
+  form {
+    width: 100%;
+  }
+
+  footer .companies, footer .contact, footer .socials {
+    margin-top: 2rem;
+  }
 }
