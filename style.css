@@ -550,6 +550,7 @@ form input:focus, form textarea:focus {
   }
   .card {
     width: 100%;
+    margin-bottom: 1rem;
   }
   nav {
     display: none;
@@ -562,7 +563,7 @@ form input:focus, form textarea:focus {
     margin-bottom: 2rem;
   }
   p {
-    font-size: 18px;
+    font-size: 1.1rem;
   }
   section.contact {
     padding: 0 1rem;
